@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..400..1000;1,9..400..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-espresso: #2C1503;
+  --color-roast: #5C2E00;
+  --color-latte: #C8956C;
+  --color-cream: #F5ECD7;
+  --color-milk: #FBF7F0;
+  --color-leaf: #3A6B47;
+  --color-matcha: #6B9E78;
+  --color-sprout: #C4DDB0;
+  --color-steam: #9B8675;
+  --color-gold: #C9933A;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-milk);
+    color: var(--color-espresso);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background-color: var(--color-cream);
+    color: var(--color-roast);
+  }
+}
+
+/* Elegant scrollbar for gourmet look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-milk);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-steam);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-latte);
+}

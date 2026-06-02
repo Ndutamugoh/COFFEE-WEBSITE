@@ -1,0 +1,6 @@
+{
+  "name": "Mugi Coffee Distributor",
+  "description": "Premium e-commerce platform for Mugi Coffee in Nairobi and Naivasha, Kenya, featuring secure M-Pesa payments, dynamic delivery zone fees, order tracking, a smart AI brewing sommelier, and client-managed admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
